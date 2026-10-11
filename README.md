@@ -6,7 +6,7 @@ actually get exploited — then offers one-click fixes. Zero third-party
 dependencies, Python >= 3.9.
 
 ```bash
-pip install mcp-audit
+pip install mcp-runtime-audit
 mcp-audit scan
 ```
 
@@ -55,7 +55,7 @@ overlap.
 ## Quick start
 
 ```bash
-pip install mcp-audit
+pip install mcp-runtime-audit
 
 # scan default locations (~/.claude.json, ~/.codex/config.json,
 # ~/.config/mcp/servers.json, ~/.mcp.json)
@@ -133,7 +133,7 @@ using these for compliance reporting.
 # .github/workflows/mcp-audit.yml
 - uses: actions/setup-python@v5
   with: { python-version: "3.12" }
-- run: pip install mcp-audit
+- run: pip install mcp-runtime-audit
 - run: mcp-audit scan --config ./mcp-servers.json --format json
 # exits 1 on findings -> fails the build
 ```
