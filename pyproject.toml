@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-audit"
+version = "0.1.0"
+description = "Local runtime security scanner for MCP servers — known-CVE checks, one-click fixes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "hao li", email = "haoli5933@gmail.com" }]
+keywords = ["mcp", "security", "scanner", "cli", "cve"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/mcp-audit"
+
+[project.scripts]
+mcp-audit = "mcp_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
