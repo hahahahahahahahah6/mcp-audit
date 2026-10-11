@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcp-audit"
+name = "mcp-runtime-audit"
 version = "0.1.0"
 description = "Local runtime security scanner for MCP servers — known-CVE checks, one-click fixes"
 readme = "README.md"
